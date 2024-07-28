@@ -7,7 +7,8 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-server
+    runs-on: self-hosted
+    labels: ubuntu-server
 
     steps:
       - name: Checkout repository
