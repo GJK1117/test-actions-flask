@@ -7,12 +7,11 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: self-hosted
-    labels: ubuntu-server
+    runs-on: ubuntu-server
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set environment variables
         run: |
